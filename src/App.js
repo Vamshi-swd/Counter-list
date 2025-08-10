@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Counter from './components/Counter';
+import ListView from './components/ListView';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+   const [list, setList] = useState(() => {
+        const savedList = localStorage.getItem("numbers");
+        return savedList ? JSON.parse(savedList) : [];
+});
+
+useEffect(() => {
+    localStorage.setItem("numbers", JSON.stringify(list));
+},[list]);
+
+const addNumber = (num) => {
+  setList(prev =>(prev.includes(num)?prev : [...prev,num]));
+};
+const clearList =()=>setList([]);
+
+return(
+  <div className="max-w-md mx-auto p-4">
+    <Counter onAdd={addNumber}/>
+    <ListView items={list} onClear={clearList}/>
+  </div>
+);
 }
+
 
 export default App;

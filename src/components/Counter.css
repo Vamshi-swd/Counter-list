@@ -1,0 +1,60 @@
+.cnt{
+    border:1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.descbtn{
+    background-color: tomato;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+.descbtn:active {
+  transform: scale(0.90); 
+  background-color: #c0392b;
+}
+.ascbtn{
+    background-color: green;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}
+.ascbtn:active {
+  transform: scale(0.90); 
+  background-color: #45a049; 
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    align-items: center;
+}
+button{
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 5px;
+    cursor: pointer;
+    
+}
+
+.add-btn{
+    background-color: #79b4fd;
+    color: white;
+    border: 5px;
+    border-radius: 8px;
+    box-shadow: #000000 0px 0px 2px;
+}
+.add-btn:hover{
+border: none;
+box-shadow: none;
+}
