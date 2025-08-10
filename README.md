@@ -1,4 +1,4 @@
-<img alt="counter list" src="/Counter-list/public/Screenshot 2025-08-10 131243.png">
+<img alt="counter list" src="public/Screenshot 2025-08-10 131243.png">
 
 <h1 align="center">Counter List</h1>
 
