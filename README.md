@@ -81,7 +81,7 @@ npm start
 ### 🌐 Deployment
 
 This project is deployed on Vercel.
-<a href="counter-list-seven.vercel.app"><strong>deployed link</strong><a>
+<a href="#counter-list-seven.vercel.app"><strong>counter-list link </strong></a> <br>.
 You can deploy your own version by:
 
 Pushing the project to a public GitHub repository.
