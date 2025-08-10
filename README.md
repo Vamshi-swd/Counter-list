@@ -1,4 +1,4 @@
-<img alt="counter list" src="public/Screenshot 2025-08-10 131243.png">
+
 
 <h1 align="center">Counter List</h1>
 
@@ -76,3 +76,17 @@ npm install
 ```bash
 npm start
 ```
+
+
+### 🌐 Deployment
+
+This project is deployed on Vercel.
+You can deploy your own version by:
+
+Pushing the project to a public GitHub repository.
+
+Connecting your GitHub account to Vercel.
+
+Importing the project and deploying the main branch.
+
+<img alt="counter list" src="public/Screenshot 2025-08-10 131243.png">
